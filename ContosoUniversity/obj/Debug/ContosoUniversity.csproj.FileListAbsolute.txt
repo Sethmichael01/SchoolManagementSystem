@@ -176,3 +176,4 @@ C:\Users\sethm\Documents\ContosoUniversity\ContosoUniversity\obj\Debug\ContosoUn
 C:\Users\sethm\Documents\ContosoUniversity\ContosoUniversity\obj\Debug\ContosoUniversity.Migrations.ColumnFirstName.resources
 C:\Users\sethm\Documents\ContosoUniversity\ContosoUniversity\obj\Debug\ContosoUniversity.Migrations.ComplexDataModel.resources
 C:\Users\sethm\Documents\ContosoUniversity\ContosoUniversity\obj\Debug\ContosoUniversity.Migrations.DepartmentSP.resources
+C:\Users\sethm\Documents\ContosoUniversity\ContosoUniversity\obj\Debug\ContosoUniversity.Migrations.RowVersion.resources
