@@ -172,3 +172,6 @@ C:\Users\sethm\Documents\ContosoUniversity\ContosoUniversity\obj\Debug\ContosoUn
 C:\Users\sethm\Documents\ContosoUniversity\ContosoUniversity\obj\Debug\ContosoUniversity.pdb
 C:\Users\sethm\Documents\ContosoUniversity\ContosoUniversity\obj\Debug\ContosoUniversity.Migrations.InitialCreate.resources
 C:\Users\sethm\Documents\ContosoUniversity\ContosoUniversity\obj\Debug\ContosoUniversity.csproj.GenerateResource.cache
+C:\Users\sethm\Documents\ContosoUniversity\ContosoUniversity\obj\Debug\ContosoUniversity.Migrations.MaxLengthOnNamesandDatePickerSet.resources
+C:\Users\sethm\Documents\ContosoUniversity\ContosoUniversity\obj\Debug\ContosoUniversity.Migrations.ColumnFirstName.resources
+C:\Users\sethm\Documents\ContosoUniversity\ContosoUniversity\obj\Debug\ContosoUniversity.Migrations.ComplexDataModel.resources

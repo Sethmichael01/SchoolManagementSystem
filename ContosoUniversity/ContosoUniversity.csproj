@@ -149,9 +149,24 @@
     <Compile Include="Migrations\202004152102239_InitialCreate.designer.cs">
       <DependentUpon>202004152102239_InitialCreate.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202004152117036_MaxLengthOnNamesandDatePickerSet.cs" />
+    <Compile Include="Migrations\202004152117036_MaxLengthOnNamesandDatePickerSet.designer.cs">
+      <DependentUpon>202004152117036_MaxLengthOnNamesandDatePickerSet.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202004152120005_ColumnFirstName.cs" />
+    <Compile Include="Migrations\202004152120005_ColumnFirstName.designer.cs">
+      <DependentUpon>202004152120005_ColumnFirstName.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202004152136580_ComplexDataModel.cs" />
+    <Compile Include="Migrations\202004152136580_ComplexDataModel.designer.cs">
+      <DependentUpon>202004152136580_ComplexDataModel.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Course.cs" />
+    <Compile Include="Models\Department.cs" />
     <Compile Include="Models\Enrollment.cs" />
+    <Compile Include="Models\Instructor.cs" />
+    <Compile Include="Models\OfficeAssignment.cs" />
     <Compile Include="Models\Student.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ViewModels\EnrollmentDateGroup.cs" />
@@ -218,6 +233,15 @@
   <ItemGroup>
     <EmbeddedResource Include="Migrations\202004152102239_InitialCreate.resx">
       <DependentUpon>202004152102239_InitialCreate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202004152117036_MaxLengthOnNamesandDatePickerSet.resx">
+      <DependentUpon>202004152117036_MaxLengthOnNamesandDatePickerSet.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202004152120005_ColumnFirstName.resx">
+      <DependentUpon>202004152120005_ColumnFirstName.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202004152136580_ComplexDataModel.resx">
+      <DependentUpon>202004152136580_ComplexDataModel.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
