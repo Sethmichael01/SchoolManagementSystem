@@ -4,60 +4,60 @@
     ViewBag.Title = "Details";
 }
 
-<h2>Details</h2>
-
 <div>
-    <h4>Student</h4>
     <hr />
-    <dl class="dl-horizontal">
-        <dt>
-            @Html.DisplayNameFor(model => model.LastName)
-        </dt>
+    <dl class="dl-horizontal">      
 
         <dd>
-            @Html.DisplayFor(model => model.LastName)
-        </dd>
 
-        <dt>
-            @Html.DisplayNameFor(model => model.FirstMidName)
-        </dt>
+            <div class="card shadow mb-4">
+                <div class="card-header py-3">
+                    <h6 class="m-0 font-weight-bold text-primary">@Model.FullName Grades</h6>
+                </div>
+                <div class="card-body">
+                    <div class="table-responsive">
+                        <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+                            <thead>
+                                <tr>
+                                    <th>ID</th>
+                                    <th>Enrollment Date</th>
+                                    <th>Course Title</th>
+                                    <th>Credit Load</th>
+                                    <th>Grade</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                @foreach (var item in Model.Enrollments)
+                                {
+                                <tr>
+                                    <td>
+                                        @Model.ID
+                                    </td>
+                                    <td>
+                                        @Html.DisplayFor(modelItem => item.Student.EnrollmentDate)
+                                    </td>
+                                    <td>
+                                        @Html.DisplayFor(modelItem => item.Course.Title)
+                                    </td>
+                                    <td>
+                                        @Html.DisplayFor(modelItem => item.Course.Credits)
+                                    </td>
+                                    <td>
+                                        @Html.DisplayFor(modelItem => item.Grade)
+                                    </td>
+                                </tr>
+                                }
 
-        <dd>
-            @Html.DisplayFor(model => model.FirstMidName)
-        </dd>
+                            </tbody>
 
-        <dt>
-            @Html.DisplayNameFor(model => model.EnrollmentDate)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.EnrollmentDate)
-        </dd>
-        <dt>
-            @Html.DisplayNameFor(model => model.Enrollments)
-        </dt>
-        <dd>
-            <table class="table">
-                <tr>
-                    <th>Course Title</th>
-                    <th>Grade</th>
-                </tr>
-                @foreach (var item in Model.Enrollments)
-                {
-                    <tr>
-                        <td>
-                            @Html.DisplayFor(modelItem => item.Course.Title)
-                        </td>
-                        <td>
-                            @Html.DisplayFor(modelItem => item.Grade)
-                        </td>
-                    </tr>
-                }
-            </table>
+                        </table>
+                    </div>
+                </div>
+            </div>    
         </dd>
     </dl>
 </div>
 <p>
-    @Html.ActionLink("Edit", "Edit", new { id = Model.ID }) |
-    @Html.ActionLink("Back to List", "Index")
+    @Html.ActionLink("Edit", "Edit", new { id = Model.ID }, new { @class = "btn btn-info"}) 
+    @Html.ActionLink("Back to List", "Index", null, new { @class = "btn btn-primary"})
 </p>
