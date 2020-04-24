@@ -1,29 +1,45 @@
 ﻿@model IEnumerable<ContosoUniversity.ViewModels.EnrollmentDateGroup>
-           
+
 @{
     ViewBag.Title = "Student Body Statistics";
 }
 
-<h2>Student Body Statistics</h2>
+<div class="card shadow mb-4">
+    <div class="card-header py-3">
+        <h6 class="m-0 font-weight-bold text-primary">Student Body Statistics</h6>
+    </div>
+    <div class="card-body">
+        <div class="table-responsive">
+            <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+                <thead>
+                    <tr>
+                        <th>
+                            Enrollment Date
+                        </th>
+                        <th>
+                            Students
+                        </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var item in Model)
+                    {
+                    <tr>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.EnrollmentDate)
+                        </td>
+                        <td>
+                            @item.StudentCount
+                        </td>
+                    </tr>
+                    }
 
-<table>
-    <tr>
-        <th>
-            Enrollment Date
-        </th>
-        <th>
-            Students
-        </th>
-    </tr>
+                </tbody>
 
-@foreach (var item in Model) {
-    <tr>
-        <td>
-            @Html.DisplayFor(modelItem => item.EnrollmentDate)
-        </td>
-        <td>
-            @item.StudentCount
-        </td>
-    </tr>
-}
-</table>
+            </table>
+        </div>
+    </div>
+</div>
+
+
+
